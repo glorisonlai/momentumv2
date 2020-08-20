@@ -3,9 +3,13 @@ import bg from '../../assets/jay-manTREE.jpg';
 import './background.css';
 
 const Background = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  return <img className="main-bg" src={bg} onLoad={() => setLoading(true)} />;
+  return (
+    <div className="bg" style={loading ? {} : { display: 'none' }}>
+      <img className="bg cover" src={bg} onLoad={() => setLoading(false)} alt={''} />
+    </div>
+  );
 };
 
 export default Background;

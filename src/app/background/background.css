@@ -1,0 +1,14 @@
+.bg {
+    position: fixed;
+    z-index: -99;
+    pointer-events: none;
+}
+
+.cover {
+    background-color: black;
+}
+
+img {
+    height: auto;
+    width: 100vw;
+}

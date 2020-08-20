@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "clean": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "clean": "eslint '*/**/*.{js,ts,tsx,css}' --quiet --fix"
   },
   "eslintConfig": {
     "extends": "react-app"

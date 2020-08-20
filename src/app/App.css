@@ -1,3 +1,8 @@
+:root {
+  --text-color: #ffffff;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
 }
