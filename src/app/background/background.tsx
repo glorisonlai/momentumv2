@@ -4,10 +4,15 @@ import './background.css';
 
 const Background = () => {
   const [loading, setLoading] = useState(true);
+  const imgStyle = {
+    display: loading ? 'none' : 'block',
+    minHeight: window.screen.height,
+    minWidth: window.screen.width,
+  };
 
   return (
-    <div className="bg" style={loading ? {} : { display: 'none' }}>
-      <img className="bg cover" src={bg} onLoad={() => setLoading(false)} alt={''} />
+    <div className="bg">
+      <img className="bg fade-in" style={{ ...imgStyle }} src={bg} onLoad={() => setLoading(false)} alt={''} />
     </div>
   );
 };
