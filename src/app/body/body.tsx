@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { months, days } from '../constants';
 import './body.css';
+import emoji from 'emoji-dictionary';
 
 const Body: React.FunctionComponent = () => {
   const [time, setTime] = useState(Date.now());
@@ -55,16 +56,20 @@ const Body: React.FunctionComponent = () => {
 
   return (
     <div className="body">
-      <div className="left" />
+      <div className="left">
+        <div className="to-do" />
+      </div>
       <div className="center">
         <h2>
-          <strong>Let&apos;s get this bread</strong>
+          <strong>Let&apos;s get this bread {emoji.getUnicode('bread')}</strong>
         </h2>
         <Clock />
         <CalendarDate />
         <div className="favorite-links" />
       </div>
-      <div className="right" />
+      <div className="right">
+        <div className="weather" />
+      </div>
     </div>
   );
 };
