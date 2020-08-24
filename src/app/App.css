@@ -3,3 +3,7 @@
   --ease-in-timer: 3s;
   overflow: hidden;
 }
+
+.App {
+  color:var(--text-color);
+}

@@ -1,17 +1,16 @@
 import React from 'react';
 import './App.css';
 import Background from './background/background';
+import Body from './body/body';
 
-function App() {
-  return (
-    <div className="App">
-      <Background />
-      <div className="to-do" />
-      <div className="weather" />
-      <div className="body" />
-      <div className="settings" />
-    </div>
-  );
-}
+const App: React.FunctionComponent = () => (
+  <div className="App">
+    <Background />
+    <div className="to-do" />
+    <div className="weather" />
+    <Body />
+    <div className="settings" />
+  </div>
+);
 
 export default App;
