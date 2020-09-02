@@ -25,32 +25,28 @@ const Body: React.FunctionComponent = () => {
     refresh(timer);
   }, [time]);
 
-  const formatDate = (dateElement: number) => {
+  const formatDate = (dateElement: number): string => {
     const dateElementStr = dateElement.toString();
     return `00${dateElementStr}`.substring(dateElementStr.length);
   };
 
   const Clock = () => {
     return (
-      <div>
-        <h1>
-          <strong>
-            {formatDate(hour)}:{formatDate(minute)}
-          </strong>
-        </h1>
-      </div>
+      <h1>
+        <strong>
+          {formatDate(hour)}:{formatDate(minute)}
+        </strong>
+      </h1>
     );
   };
 
   const CalendarDate = () => {
     return (
-      <div>
-        <h1>
-          <strong>
-            {days[day]}, {months[month]} {date}
-          </strong>
-        </h1>
-      </div>
+      <h1>
+        <strong>
+          {days[day]}, {months[month]} {date}
+        </strong>
+      </h1>
     );
   };
 
