@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './app/App';
+import config from './aws-exports';
+import Amplify from 'aws-amplify';
+Amplify.configure(config);
 // import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

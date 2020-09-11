@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-momentumv2-dev-25030-authRole",
+      "UnauthRoleArn": "arn:aws:iam::297913736823:role/amplify-momentumv2-dev-25030-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::297913736823:role/amplify-momentumv2-dev-25030-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-momentumv2-dev-25030-deployment",
+      "UnauthRoleName": "amplify-momentumv2-dev-25030-unauthRole",
+      "StackName": "amplify-momentumv2-dev-25030",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:297913736823:stack/amplify-momentumv2-dev-25030/e8046510-f44e-11ea-8070-0aec1a722588",
+      "AmplifyAppId": "d1uegbfb73b3ft"
+    }
+  }
+}
