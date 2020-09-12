@@ -1,0 +1,5 @@
+{
+    "tableName": "momentumv2db",
+    "partitionKeyName": "user",
+    "partitionKeyType": "S"
+}

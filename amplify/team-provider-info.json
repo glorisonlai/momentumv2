@@ -10,6 +10,11 @@
       "StackName": "amplify-momentumv2-dev-25030",
       "StackId": "arn:aws:cloudformation:ap-southeast-2:297913736823:stack/amplify-momentumv2-dev-25030/e8046510-f44e-11ea-8070-0aec1a722588",
       "AmplifyAppId": "d1uegbfb73b3ft"
+    },
+    "categories": {
+      "auth": {
+        "cognito7d8d4d6d": {}
+      }
     }
   }
 }

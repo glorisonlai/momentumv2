@@ -1,0 +1,41 @@
+{
+    "paths": [
+        {
+            "name": "/api/todo",
+            "lambdaFunction": "todoFunction",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ]
+            },
+            "policyResourceName": "/api/todo"
+        }
+    ],
+    "resourceName": "mainAPI",
+    "apiName": "mainAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "todoFunction"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-momentumv2-dev-25030-authRole",
+        "unAuthRoleName": "amplify-momentumv2-dev-25030-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "todoFunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
