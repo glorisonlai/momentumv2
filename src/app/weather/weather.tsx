@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Weather: React.FunctionComponent = () => {
-  const [expanded, setExpanded] = useState;
+  const [expanded, setExpanded] = useState(false);
   const temp = 14;
   const suburb = 'Knox';
   const convertToF = (temp: number): number => Math.round((temp * 9) / 5 + 32);

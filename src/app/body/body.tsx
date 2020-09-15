@@ -10,7 +10,7 @@ const Body: React.FunctionComponent = () => {
   const year = currentTime.getFullYear(),
     month = currentTime.getMonth(),
     date = currentTime.getDate(),
-    day = currentTime.getDay() - 1,
+    day = currentTime.getDay(),
     hour = currentTime.getHours(),
     minute = currentTime.getMinutes();
 
